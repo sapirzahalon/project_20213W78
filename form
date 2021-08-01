@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form </title>
+    <link rel="stylesheet" href="../CssFile/form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <div id='background'>
+        <div id='main'>
+            <header>
+				<img id='logo' src= "../ImagesFile/logo3.jpeg" alt="logo"/>
+			</header>
+            <br>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+                <div class="container-fluid">    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+          
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="../index.html" target=_blank>Home </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../PagesFile/ShacharPage.html" target=_blank>Shachar's Closet </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../PagesFile/GayaPage.html" target=_blank> Gaya's Closet </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../PagesFile/SapirPage.html" target=_blank> Sapir's Closet </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="top" title="Not available"> Shopping cart </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../PagesFile/DonationsPage.html" target=_blank> Donations </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../PagesFile/contactUs.html" target=_blank> Contact us </a>
+                        </li>
+                        <li>
+                      </ul> </div> </div>  </nav> <br> <br>
+            <h1> Checkout Form </h1> <br> <br>
+            
+            <main>
+
+                <div id="video">
+                    
+                </div>
+                <form target=_blank action="../IncludesFile/index.php" method="post" autocomplete="on">
+
+                    <fieldset class="fieldset">
+                        <h3> Personal Information </h3> <br>
+                        <div><label class="lbl">First name: </label><input class="put" type="text" name="FirstN" id="FirstN" required placeholder="Enter first name" autofocus></div><br>
+                        <div><label class="lbl">Family name: </label><input class="put" type="text" name="FamilyN" id="FamilyN" required placeholder="Enter family name"></div><br>
+                        <div><label class="lbl">Email: </label><input class="put" type="email" name="email" id="email" required placeholder="Enter your E-mail"></div><br>
+                        <div><label class="lbl">Tel: </label><input class="put" type="tel" name="telNum" id="telNum" required placeholder="Enter phone number"></div><br>
+                        <div><label class="lbl">Birth-date: </label><input class="put" type="date" name="birthDate" id="birthDate"></div><br>
+                    </fieldset> <br><br>
+
+                    <fieldset class="fieldset">
+                        <h3> Shipping Details </h3> <br>
+                        <div><label class="lbl">Living-area: </label><select name="area" id="area">
+                            <option value="North"> North </option>
+                            <option value="Center"> Center </option>
+                            <option value="East"> East </option>
+                            <option value="West"> West </option>
+                            <option value="South"> South </option> </select></div><br>
+                        <div><label class="lbl">City: </label><input class="put" type="text" name="city" id="city" required placeholder="Enter your city"></div><br>
+                        <div><label class="lbl">Address: </label><input class="put" type="text" name="Address" id="Address" required placeholder="Enter your address"></div><br>
+                        <div><label class="lbl">Zip: </label><input class="put" type="number" name="zip" id="zip" placeholder="Enter your zip code"></div><br>
+                    </fieldset> <br><br>
+
+                    <fieldset class="fieldset">
+                        <h3> Payment's Method </h3> <br>
+                        <div><label class="lbl">Name on Card: </label><input class="put" type="text" name="nameCard" id="nameCard" required placeholder="Enter holder's name"></div><br>
+                        <div><label class="lbl">ID: </label><input class="put" type="number" name="ID" id="ID" required placeholder="Enter holder's ID"></div><br>
+                        <div><label class="lbl">Credit card number: </label><input class="put" type="number" name="cardNum" id="cardNum" required placeholder="Enter credit card number"></div><br>
+                        <div><label class="lbl">Exp date: </label><input class="put" type="date" name="EXPdate" id="EXPdate" required></div><br>
+                        <div><label class="lbl">CVV: </label><input class="put" type="number" name="CVVn" id="CVVn" minlength="3" maxlength="3" required placeholder="CVV"></div><br>
+                    </fieldset> <br><br>
+                   
+
+                    <button type="submit" id="submitShop" onclick="submitShop()"> Submit </button>
+
+                </form>
+              
+            </main>
+            <div id="clear"> </div>
+            <br> <hr> <br>
+            <footer>
+                <p> Shachar & Gaya & Sapir - &copy 2021 </p> <br><br>
+            </footer>
+        </div>        
+    </div>
+
+    
+    <script src="../JSFile/PagesJS.js">
+        
+    </script>
+</body>
+</html>
